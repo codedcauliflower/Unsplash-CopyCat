@@ -36,7 +36,12 @@ header {
     color: #878575;
     padding: 0 0 0 19px;
 
+    &:hover{
+        color: #4a4942;
+    }
 }
+
+
 
 #line{
     display: inline-block;
@@ -93,13 +98,54 @@ nav {
         list-style: none;
         margin: 0;
         padding: 0;
-        display: flex;
-    }
+        display: flex; /* Arrange list items horizontally */
+        align-items: center; /* Vertically center items */ 
 
-    li {
-        margin-left: 20px;
+        li {
+            margin: 0 15px;  /* Spacing between items */
+
+            a {
+                color: #878575;  /* Example text color */
+                text-decoration: none;
+
+                &:hover{
+                    color: #4a4942;
+                }
+            }
+        }
     }
 }
+
+#nav-line{
+    background-color: #878575;
+
+    width: 1px;
+    height: 30px;
+}
+
+#submit-a-photo{
+    border: 1px solid #878575;
+    border-radius: 5px;
+
+    padding: 5px;
+
+    &:hover{
+        border: 1px solid #4a4942;
+    }
+}
+
+#burger-menu {
+    /* Some example styling for the hamburger icon */
+    .burger-line {
+        width: 20px;
+        height: 2px;
+        background-color: #878575;
+        margin-bottom: 5px;
+    }
+
+    cursor: pointer;
+}
+
 
 .hero {
     height: 300px; /* Adjust hero section height as needed */
@@ -139,6 +185,8 @@ nav {
     }
     
     .trending-section li {
+        color: #878575;
+
         margin-bottom: 5px; 
         padding: 5px 10px; /* Add some padding for the border */
         border-radius: 5px; /* Set the rounded corner effect */
