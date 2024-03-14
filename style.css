@@ -1,0 +1,132 @@
+/* Adjust as needed */
+body {
+  margin: 0;
+}
+
+header {
+  height: 80px;
+  display: flex;
+  flex-direction: column; /* Stack divs vertically */
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px 15px 15px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  height: 100px;
+}
+
+#header-section-1 {
+  display: flex; /* Allow flexbox layout within the first section */
+  align-items: center;
+  width: 100%; /* Ensure the first section spans the full width */
+}
+
+#header-section-2 {
+  display: flex;
+  align-items: center;
+  width: 100%; /* Ensure the second section also spans the full width */
+}
+
+#header-section-2 > span {
+  color: #878575;
+  padding: 0 0 0 19px;
+}
+
+#line {
+  display: inline-block;
+  background-color: #878575;
+  width: 1px;
+  height: 30px;
+  margin-left: 19px;
+}
+
+.logo {
+  width: 100px; /* Adjust logo width */
+}
+
+.logo > img {
+  width: 45px;
+}
+
+.search-bar-div-1, .search-bar-div-2 {
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  flex: 1;
+  margin-right: 15px;
+}
+
+.search-bar-div-1 {
+  border-radius: 30px;
+  width: 1500px;
+  height: 45px;
+}
+
+.search-bar-div-2 {
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+}
+
+.search-bar-div-1 > img, .search-bar-div-2 > img {
+  width: 15px;
+  padding: 0 15px 0 15px;
+}
+
+.search-bar-text {
+  color: #878575;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav li {
+  margin-left: 20px;
+}
+
+.hero {
+  height: 300px; /* Adjust hero section height as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.hero .search-bar-and-trending {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.hero .trending-section {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center text content vertically */
+}
+.hero .trending-section h2 {
+  margin-bottom: 10px;
+}
+.hero .trending-section ul {
+  list-style: none; /* Remove default bullet points */
+  margin: 0;
+}
+.hero .trending-section ul {
+  list-style: none; /* Remove default bullet points */
+  margin: 0;
+  padding: 0;
+}
+.hero .trending-section li {
+  margin-bottom: 5px;
+  padding: 5px 10px; /* Add some padding for the border */
+  border-radius: 5px; /* Set the rounded corner effect */
+  border: 2px solid rgba(135, 133, 117, 0.1294117647); /* Light background color */
+  cursor: pointer; /* Indicate interactivity on hover */
+  /* Hover Animation */
+}
+.hero .trending-section li:hover {
+  border: 2px solid #878575; /* Slightly darker background on hover */
+}/*# sourceMappingURL=style.css.map */
