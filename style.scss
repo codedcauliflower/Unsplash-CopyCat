@@ -1,14 +1,11 @@
-// Variables (consider adjusting these values)
-$header-height: 80px;
-
 body {
-    margin: 0; // Reset default margins
+    margin: 0; 
 }
 
 header {
     height: $header-height; 
     display: flex;
-    flex-direction: column; /* Stack divs vertically */ 
+    flex-direction: column;
     align-items: center;  
     justify-content: space-between;
     padding: 10px 20px 15px 15px;
@@ -19,16 +16,16 @@ header {
 }
 
 #header-section-1 {
-    display: flex; /* Allow flexbox layout within the first section */
+    display: flex;
     align-items: center;
-    width: 100%; /* Ensure the first section spans the full width */
+    width: 100%;
 }
 
 #header-section-2 {
     display: flex;
     align-items: center;
 
-    width: 100%; /* Ensure the second section also spans the full width */
+    width: 100%;
 }
 
 #header-section-2 > span{
@@ -46,14 +43,15 @@ header {
     display: inline-block;
     background-color: #878575;
 
-    width: 2px;
+    width: 1px;
     height: 30px;
 
     margin-left: 19px;
+
 }
 
 .logo {
-    width: 100px; /* Adjust logo width */
+    width: 100px;
 }
 
 .logo > img{
@@ -65,7 +63,7 @@ header {
     align-items: center;
 
     background-color: #f2f2f2;
-    flex: 1; // Make the search bar take up available space
+    flex: 1;
 
     margin-right: 15px;
 }
@@ -97,14 +95,14 @@ nav {
         list-style: none;
         margin: 0;
         padding: 0;
-        display: flex; /* Arrange list items horizontally */
-        align-items: center; /* Vertically center items */ 
+        display: flex;
+        align-items: center;
 
         li {
-            margin: 0 15px;  /* Spacing between items */
+            margin: 0 15px;
 
             a {
-                color: #878575;  /* Example text color */
+                color: #878575;
                 text-decoration: none;
 
                 &:hover{
@@ -134,7 +132,6 @@ nav {
 }
 
 #burger-menu {
-    /* Some example styling for the hamburger icon */
     .burger-line {
         width: 20px;
         height: 2px;
@@ -152,14 +149,14 @@ nav {
     display: flex;
     flex-direction: column; 
     align-items: center;
-    padding: 20px;
+    padding: 0 590px;
 
     .search-bar-and-trending {
         display: flex;     
         align-items:flex-end;
         height: 550px;
         justify-content: center;
-        margin-bottom: 20px;
+        margin-bottom: 60px;
 
         #heading-unsplash {
             font-size: 45px;
@@ -186,20 +183,22 @@ nav {
         height: 300px;
         display: flex;
         flex-direction: row;
-        align-items: center; /* Center text content vertically */
+        align-items: center;
+        justify-content: space-between;
     }
 
     .trending-section ul {
-        list-style: none; /* Remove default bullet points */
+        list-style: none;
         margin: 0;
         padding: 0;
         height: 100%;
         width: 300px;
 
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+
         align-items: center;
-        justify-content: center;
 
         border: 1px solid #87857521;
         border-radius: 10px;
@@ -211,16 +210,24 @@ nav {
     .trending-section li {
         color: #878575;
         width: 90px;
+        height: 20px;
         text-align: center;
-        margin-bottom: 5px; 
-        padding: 5px 10px; /* Add some padding for the border */
-        border-radius: 5px; /* Set the rounded corner effect */
-        border: 2px solid #87857521; /* Light background color */
-        cursor: pointer; /* Indicate interactivity on hover */
-    
-        /* Hover Animation */
+
+        margin-left: 15px;
+        padding: 5px 10px; 
+
+        border-radius: 5px;
+        border: 2px solid #87857521;
+        
+        cursor: pointer; 
+
         &:hover {
-            border: 2px solid #878575; /* Slightly darker background on hover */
+            border: 2px solid #878575;
+        }
+
+        .trending-section ul li {
+            margin-right: 10px;    
+            white-space: nowrap;
         }
     }
 
@@ -228,5 +235,24 @@ nav {
         height: 100%;
         width: 300px;
         border-radius: 10px;
+        object-fit: cover;
     }
+
+    .trending-images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 16px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 16px;
+      
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      
+        grid-auto-rows: 1fr;
+      }
 }
